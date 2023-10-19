@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Spooky Pairs Game" />
+    <meta name="author" content="Neal's Brainworms" />
+    <link rel="icon" href="images/favicon.png" sizes="192x192" />
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="apple-touch-icon" href="images/favicon.png" />
+    <script src="js/index.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Creepster&family=Raleway:wght@100;200;300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Spooky Memory Game</title>
+  </head>
+  <body>
+    <div class="header">Spooky Memory Game</div>
+    <main>
+      <button class="intro-button" id="instructions">Instructions</button>
+      <a href="game.html">Start Game</a>
+    </main>
+    <div class="instruction-modal"></div>
+    <div class="modal">
+      <h1>Instructions</h1>
+      <p>
+        When you click the start button, the game timer will start, and you will
+        be presented with 12 cards, all turned face down.
+      </p>
+
+      <ul>
+        <li>
+          Clicking a card will reveal the image on the face of the card. Each
+          turn consists of clicking on two cards.
+        </li>
+        <li>
+          If the cards are a match, they will stay turned up. If they are not a
+          match, they will turn back around.
+        </li>
+        <li>
+          Keep clicking on cards to find matching pairs. The game ends when
+          you've found all six pairs.
+        </li>
+      </ul>
+      <p>
+        At the end of the game, you will be presented with the time it took you
+        to find all six pairs. Good luck!
+      </p>
+      <button class="close-modal">Close</button>
+    </div>
+  </body>
+</html>

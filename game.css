@@ -1,0 +1,173 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+}
+
+.header {
+    width: 100%;
+    height: 10rem;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Creepster", sans-serif;
+    font-size: 4rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+#navigation-bar {
+    background-image: url("assets/header-bg.avif");
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr 70% 1fr;
+}
+
+#timer, #turns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #83060e;
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: "Creepster", sans-serif;
+    text-shadow: 4px 4px #000000;
+}
+
+#card-grid {
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin: 1rem auto;
+    row-gap: 1rem;
+    max-height: 100vh;
+    position: relative;
+}
+
+.card {
+    background-image: url(./assets/svgs/grim-reaper.svg);
+    background-position: center;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    width: 20vw;
+    height: 20vw;
+    padding: 0.5rem;
+    border: solid 5px #b02929;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.matched {
+    border: solid 5px #ffffff;
+}
+
+.end-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.end-modal.active {
+    display: flex;
+}
+
+.modal {
+    background-image: url("assets/blood-bg2.avif");
+    background-color: #83060e;
+    color: #ffffff;
+    background-position: center;
+    background-size: cover;
+    display: none;
+    flex-direction: column;
+    padding: 4rem;
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    font-family: "Creepster", sans-serif;
+    align-items: center;
+    gap: 2rem;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.close-modal {
+    margin: 0 auto;
+    margin-top: 2rem;
+    background-color: #83060e;
+    font-family: "Creepster", sans-serif;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    width: 235px;
+    border: 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a {
+    background-color: #83060e;
+    color: #000000;
+    text-align: center;
+    font-family: "Creepster", sans-serif;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    width: 235px;
+    border: 2px solid;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#total-turns, #total-time {
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 490px) {
+    .header {
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
+        font-size: 3rem;
+    }
+
+    #timer, #turns {
+        font-size: 1.5rem;
+    }
+
+    #card-grid {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .card {
+        width: 10rem;
+        height: 10rem;
+    }
+}
