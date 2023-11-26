@@ -1,3 +1,3 @@
-# 23-aug-pairs
+# Brainworms Boneyward
 
 A JavaScript game.
